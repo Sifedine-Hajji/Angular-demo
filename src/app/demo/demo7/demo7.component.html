@@ -1,25 +1,38 @@
 <h3> Demo 7 - Structurals Directives</h3>
 
-<p *ngIf="isVisible">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dignissimos, totam fugit eum soluta repellendus
-    laborum tempora rem impedit quam fuga blanditiis. Animi veritatis nihil illum aliquam natus hic quidem!
-</p>
+<div class="demo-container">
 
-<button (click)="toggle()">isVisible</button>
+    <button class="btn" (click)="toggle()">isVisible</button>
+    <p *ngIf="isVisible">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dignissimos, totam fugit eum soluta
+        repellendus
+        laborum tempora rem impedit quam fuga blanditiis. Animi veritatis nihil illum aliquam natus hic quidem!
+    </p>
 
-<h4>NgFor</h4>
+    <div class="ng-properties">
+        <div>
+            <h4>NgFor</h4>
 
-<ul>
-    <li *ngFor="let team of teamNba">{{team}}</li>
-</ul>
+            <ul>
+                <li *ngFor="let team of teamNba">{{team}}</li>
+            </ul>
+        </div>
 
-<h4>NgSwitch</h4>
 
-<input type="text" [(ngModel)]="maVariable">
-<div [ngSwitch]="maVariable">
-    <div *ngSwitchCase="1">Coca</div>
-    <div *ngSwitchCase="2">Fanta</div>
-    <div *ngSwitchCase="3">Iced Tea</div>
-    <div *ngSwitchDefault>Entrée invalide</div>
+        <div>
+            <h4>NgSwitch</h4>
+
+            <input type="text" [(ngModel)]="maVariable">
+            <div [ngSwitch]="maVariable">
+                <div *ngSwitchCase="1">Coca</div>
+                <div *ngSwitchCase="2">Fanta</div>
+                <div *ngSwitchCase="3">Iced Tea</div>
+                <div *ngSwitchDefault>Entrée invalide</div>
+
+            </div>
+        </div>
+    </div>
+
+
 
 </div>

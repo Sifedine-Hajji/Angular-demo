@@ -1,8 +1,14 @@
 <h3> Demo 6 - Component Directives</h3>
-<p [ngStyle]="currentStyles">Démo ngStyle</p>
-<button (click)="switchItalic()">Italique</button>
-<button (click)="switchBold()">Gras</button>
-<button (click)="switchSize()">Taille</button>
 
-<p [ngClass]="{red : isRed}">Démo ngClass</p>
-<button (click)="switchClass()">Rouge</button>
+<div class="demo-container">
+    <p [ngStyle]="currentStyles">Démo ngStyle</p>
+
+    <div>
+        <button class="btn" (click)="switchItalic()">Italique</button>
+        <button class="btn" (click)="switchBold()">Gras</button>
+        <button class="btn" (click)="switchSize()">Taille</button>
+    </div>
+
+    <p [ngClass]="{red : isRed}">Démo ngClass</p>
+    <button class="btn" (click)="switchClass()">Rouge</button>
+</div>

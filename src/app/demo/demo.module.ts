@@ -12,6 +12,8 @@ import { SharedModule } from '../shared/shared.module';
 import { Demo6Component } from './demo6/demo6.component';
 import { Demo7Component } from './demo7/demo7.component';
 import { FormsModule } from '@angular/forms';
+import { Demo8Component } from './demo8/demo8.component';
+import { EnfantComponent } from './demo8/enfant/enfant.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { FormsModule } from '@angular/forms';
     Demo5Component,
     Demo6Component,
     Demo7Component,
+    Demo8Component,
+    EnfantComponent,
   ],
   imports: [
     CommonModule,

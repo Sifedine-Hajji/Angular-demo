@@ -1,11 +1,13 @@
-<h3>Demo 1 - Component Pipes</h3>
-<p>Valeur de ma chaine de caractere sans pipe : {{maChaine}}</p>
-<p>Uppercase pipe : {{maChaine | uppercase}}</p>
-<p>Lowercase pipe : {{maChaine | lowercase}}</p>
-<p>titlecase pipe : {{maChaine | titlecase}}</p>
+<h3>Demo 5 - Component Pipes</h3>
+<div class="demo-container pipe">
+    <p><strong>Valeur de ma chaine de caractere sans pipe</strong> : {{maChaine}}</p>
+    <p><strong>Uppercase pipe </strong>: {{maChaine | uppercase}}</p>
+    <p><strong>Lowercase pipe</strong> : {{maChaine | lowercase}}</p>
+    <p><strong>titlecase pipe</strong> : {{maChaine | titlecase}}</p>
 
-<p>Valeur de ma date sans pipe : {{maDate}}</p>
-<p>Formatage de la date : {{maDate | date : 'dd/MM/yyyy'}}</p>
+    <p><strong>Valeur de ma date sans pipe</strong> : {{maDate}}</p>
+    <p><strong>Formatage de la date</strong> : {{maDate | date : 'dd/MM/yyyy'}}</p>
 
-<p>Il fait actuellement {{maTemperature}} °C</p>
-<p>Aux Etats-Unis il ferait {{maTemperature | toFarenheit}}°F</p>
+    <p>Il fait actuellement {{maTemperature}} °C</p>
+    <p>Aux Etats-Unis il ferait {{maTemperature | toFarenheit}}°F</p>
+</div>
