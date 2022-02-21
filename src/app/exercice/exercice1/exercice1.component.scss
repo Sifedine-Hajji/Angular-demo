@@ -1,0 +1,82 @@
+#container {
+    height: 400px;
+    width: 600px;
+    background-color: #ccc5b936;
+    border-radius: 30px;
+    color: #EB5E28;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-family: 'Langar', cursive;
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-column-end: span 5;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+.semicolon {
+    padding: 0 20px;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+}
+
+#work-timer {
+    grid-column-end: span 5;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: #EB5E28;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0px -3px 0px lightgray;
+}
+
+#start {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+#reset {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+#stop {
+    grid-area: 3 / 4 / 3 / 4;
+}

@@ -1,0 +1,25 @@
+<h3> Demo 7 - Structurals Directives</h3>
+
+<p *ngIf="isVisible">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dignissimos, totam fugit eum soluta repellendus
+    laborum tempora rem impedit quam fuga blanditiis. Animi veritatis nihil illum aliquam natus hic quidem!
+</p>
+
+<button (click)="toggle()">isVisible</button>
+
+<h4>NgFor</h4>
+
+<ul>
+    <li *ngFor="let team of teamNba">{{team}}</li>
+</ul>
+
+<h4>NgSwitch</h4>
+
+<input type="text" [(ngModel)]="maVariable">
+<div [ngSwitch]="maVariable">
+    <div *ngSwitchCase="1">Coca</div>
+    <div *ngSwitchCase="2">Fanta</div>
+    <div *ngSwitchCase="3">Iced Tea</div>
+    <div *ngSwitchDefault>Entrée invalide</div>
+
+</div>

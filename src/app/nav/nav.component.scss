@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #252422;
+    height: 100vh;
+
+    a {
+        color: #FFFCF2;
+        text-decoration: none;
+        padding:  30px 10px;
+        transition: .3s all ease-in-out;
+        &:hover {
+            background: #EB5E28;
+        }
+
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .nav-Titles {
+            position: relative;
+            &::after {
+                content: '+';
+                position: absolute;
+                right: 0;
+                padding: 0 20px;
+                font-weight: bold;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.enfants {
+    transition: 1s all ease-in-out;
+}

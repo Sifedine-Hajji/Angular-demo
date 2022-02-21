@@ -1,0 +1,16 @@
+<nav>
+    <a routerLink="/">Home</a>
+
+    <div class="nav-container" *ngFor="let data of liens; let i = index">
+
+        <a class="nav-Titles" (click)="afficherEnfant(i)" routerLink="{{data.url}}">{{data.title}}</a>
+
+        <div class="nav-links" ngClass="{enfants : data.isVisible}" *ngIf="data.isVisible">
+            <a *ngFor="let value of data.children" routerLink="{{value.url}}">{{value.title}}</a>
+        </div>
+    </div>
+
+
+
+
+</nav>

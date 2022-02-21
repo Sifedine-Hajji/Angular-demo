@@ -1,0 +1,14 @@
+<h3>Exercice 1 :</h3>
+
+<div id="container">
+    <p id="work" class="label">Chronomètre</p>
+
+    <!--========================== Work Timer =====================-->
+    <div id="work-timer" class="timer">
+        <p id="w_seconds"> {{seconds | toMinutes}} </p>
+    </div>
+
+    <button id="start" class="btn" (click)="start()">Start</button>
+    <button id="stop" class="btn" (click)="pause()">Pause</button>
+    <button id="reset" class="btn" (click)="reset()">Reset</button>
+</div>
