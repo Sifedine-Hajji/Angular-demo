@@ -40,6 +40,13 @@ app-demo1,app-demo2,app-demo3,app-demo4,app-demo5,app-demo6,app-demo7,app-demo8 
     align-items: center;
 }
 
+app-exercice2-enfant {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    gap: 20px;
+    justify-content: center;
+}
+
 router-outlet {
     display: none;
 }

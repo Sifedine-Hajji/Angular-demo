@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(192, 192, 192, 0.295);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+    img {
+        width: 100%;
+    }
+    
+    span {
+        padding: 20px 0 0;
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

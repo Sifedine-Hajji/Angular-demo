@@ -9,6 +9,9 @@ export class Demo8Component implements OnInit {
   constructor() { }
 
   leSalut : string = 'En attente dun bonjour de lenfant';
+
+  listeHobbies : string[] = ["Zumba", "Dessin", "Code"];
+
   ngOnInit(): void {
   }
 

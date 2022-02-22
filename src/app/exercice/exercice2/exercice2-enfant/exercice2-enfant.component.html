@@ -1,0 +1,6 @@
+<div class="card" *ngFor="let list of products let i = index">
+    <img src="{{list.img}}" alt="{{list.name}}_img">
+    <span>{{list.price}} € / kg</span>
+    <h4>{{list.name}}</h4>
+    <button (click)="supprimerProduit(i)" class="btn">Delete</button>
+</div>

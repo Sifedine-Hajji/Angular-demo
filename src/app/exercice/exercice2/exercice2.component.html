@@ -1,0 +1,14 @@
+<h3>E2 - Liste de Courses</h3>
+
+<div class="add-container">
+    <input [(ngModel)]="leNom" type="text" placeholder="enter a product name">
+    <input [(ngModel)]="lePrix" type="text" placeholder="enter a product price">
+    <input [(ngModel)]="leLien" type="text" placeholder="enter a product imageUrl">
+    <button (click)="ajouterProduit()" class="btn">Add</button>
+</div>
+
+<div>
+    <app-exercice2-enfant [products]="listProducts">
+
+    </app-exercice2-enfant>
+</div>

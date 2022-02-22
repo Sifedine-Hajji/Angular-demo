@@ -2,4 +2,8 @@
     <h4>Je suis ton Fils et je m'appelle {{nom}} et j'ai {{24}} ans</h4>
     <ng-content></ng-content>
     <button (click)="saluer()" class="btn">Saluer</button>
+
+    <div *ngFor="let hobby of list">
+        {{hobby}}
+    </div>
 </div>

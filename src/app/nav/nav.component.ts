@@ -28,7 +28,8 @@ export class NavComponent implements OnInit {
       title : 'exercice',
       url : '/exercice',
       children : [
-      {title:'E1 - Chronomètre', url: 'exercice/exercice1'}
+      {title:'E1 - Chronomètre', url: 'exercice/exercice1'},
+      {title:'E2 - Liste de course', url: 'exercice/exercice2'}
     ]
     }
     
